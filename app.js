@@ -12,8 +12,12 @@
 
     function newQuestion(){
         let question = prompt("ASK A YES/NO QUESTION!");
-        $("#questionid").text(question);
-        askQuestion(question);
+        if(question==null){
+            alert("Nem értem, kérlek ismételd meg!")
+        }else(
+            $("#questionid").text(question);
+            askQuestion(question);
+        )
     }
   
     function askQuestion(question) {
