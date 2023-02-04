@@ -2,7 +2,6 @@
     listOfAnswers = ["Nem!", "Igen!", "Nem hiszem...", "Persze!", "Kétségtelenül!", "Csak álmaidban...", "Jobb ha nem válaszolok"];
     
     $("#answer").text( "A válasz... Szia Milos!");
-    $("#questionid").text("");
     $("#questionButton").click(onClick);
 
     function onClick(){
@@ -25,6 +24,7 @@
   
     function askQuestion(question) {
       $("#ball8").effect("shake");
+      $("#questionid").effect("shake");
       $("#answer").fadeIn(4000);
   
       let randomNumber = Math.random();
