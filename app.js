@@ -14,10 +14,10 @@
         let question = prompt("ASK A YES/NO QUESTION!");
         if(question==null){
             alert("Nem értem, kérlek ismételd meg!")
-        }else(
+        }else{
             $("#questionid").text(question);
             askQuestion(question);
-        )
+        }
     }
   
     function askQuestion(question) {
