@@ -1,7 +1,7 @@
     let magic8Ball = {};
-    listOfAnswers = ["Nem!", "Igen!", "Nem hiszem...", "Persze!", "Kétségtelenül!", "Csak álmaidban..."];
+    listOfAnswers = ["Nem!", "Igen!", "Nem hiszem...", "Persze!", "Kétségtelenül!", "Csak álmaidban...", "Jobb ha nem válaszolok"];
     
-    $("#answer").text( "A válasz...");
+    $("#answer").text( "A válasz... Szia Milos!");
     $("#questionid").text("");
     $("#questionButton").click(onClick);
 
