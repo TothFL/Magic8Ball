@@ -12,12 +12,15 @@
 
     function newQuestion(){
         let question = prompt("ASK A YES/NO QUESTION!");
-        if(question==null){
-            alert("Nem értem, kérlek ismételd meg!")
-        }else{
-            $("#questionid").text(question);
-            askQuestion(question);
-        }
+            console.log(question);
+            if(!question || question==null){
+                console.log("Hiba");
+                alert("Sajnos nem értem")
+            }else{
+                $("#questionid").text(question);
+                askQuestion(question);
+            }
+
     }
   
     function askQuestion(question) {
@@ -31,8 +34,8 @@
       let answer = this.listOfAnswers[randomIndex];
       $("#answer").text(answer);
   
-      console.log(question);
-      console.log(answer);
+    //   console.log(question);
+    //   console.log(answer);
     };
   
 
